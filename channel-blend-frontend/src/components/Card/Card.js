@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Card.css';
 
 const Card = ({ product }) => {
@@ -8,9 +9,10 @@ const Card = ({ product }) => {
             <h3>{product.product_name}</h3>
             <p>Brand: {product.brand_name}</p>
             <p>Price: ₹{product.price}</p>
-            <button className='details-btn'>View Details</button>
+            {/* Update Link to pass product id */}
+            <Link to={`/product/${product._id}`} className='details-btn'>View Details</Link>
         </div>
     );
 }
 
-export default Card; // Ensure Card component is exported
+export default Card;

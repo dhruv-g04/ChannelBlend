@@ -38,7 +38,7 @@
   margin: 5px 0;
 }
 
-.card button {
+.details-btn {
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
@@ -47,7 +47,7 @@
   cursor: pointer;
 }
 
-.card button:hover {
+.details-btn:hover {
   background-color: #0056b3;
 }
 
