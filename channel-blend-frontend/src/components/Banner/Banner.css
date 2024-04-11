@@ -1,0 +1,33 @@
+.banner {
+  color: rgb(3, 86, 86);
+  background-color:rgb(245, 245, 234);
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.logo {
+  width: 350px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.content{
+    transform: translate(0, -100px);
+}
+
+.company-name {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 100px;
+  /* font-weight: bold; */
+  /* font-family: Georgia, serif; */
+  margin: 10px 0;
+}
+
+.tagline {
+  font-family: "Times New Roman", Times, serif;
+  /* font-family: Arial;
+     */
+  font-size: 25px;
+  color: #666;
+}
