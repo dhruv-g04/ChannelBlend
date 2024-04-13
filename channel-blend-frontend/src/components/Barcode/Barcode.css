@@ -1,0 +1,9 @@
+.barcode-scanner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Add any additional styling for the barcode scanner here */

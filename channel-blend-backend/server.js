@@ -28,8 +28,8 @@ const Product = mongoose.model('Product', {
   product_image: String,
   product_name: String,
   brand_name: String,
-  price: Number, 
-  reviews: { 
+  price: Number,
+  reviews: {
     rating: Number,
     count: Number
   },
@@ -40,7 +40,7 @@ const Product = mongoose.model('Product', {
 app.get('/api/products', async (req, res, next) => {
   try {
     const products = await Product.find();
-    console.log('Products:', products); // Log products to check
+    // console.log('Products:', products); // Log products to check
     res.json(products);
   } catch (err) {
     console.error('Error in fetching products:', err);
