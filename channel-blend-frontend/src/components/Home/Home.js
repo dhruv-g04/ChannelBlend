@@ -20,9 +20,11 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className='main-container'>
+      <div className='sticky'>
+        <Barcode />
+      </div>
       <Banner />
-      <Barcode />
       <div className='box'>
         <h1>Product Display</h1>
         <div className="card-container">

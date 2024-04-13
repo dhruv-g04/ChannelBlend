@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import './IndividualProductPage.css'; // Import CSS file
 import { FaStar } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 
 const IndividualProductPage = () => {
   const { id } = useParams(); // Get the product ID from the URL parameter
   const [product, setProduct] = useState(null);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     // Fetch product details using the product ID
@@ -18,11 +18,16 @@ const IndividualProductPage = () => {
       })
       .catch(error => {
         console.error('Error fetching product details:', error);
+        setError(true);
       });
   }, [id]);
 
+  if (error) {
+    return <div>Error fetching product details. Please try again later.</div>;
+  }
+
   if (!product) {
-    return <div>Loading...</div>;
+    return <div>No product found.</div>;
   }
 
   return (

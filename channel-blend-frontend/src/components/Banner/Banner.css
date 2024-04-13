@@ -26,8 +26,26 @@
 
 .tagline {
   font-family: "Times New Roman", Times, serif;
-  /* font-family: Arial;
-     */
   font-size: 25px;
   color: #666;
+}
+
+
+@media screen and (max-width:900px) {
+  .banner {
+    height: 60vh;
+  }
+  .logo {
+    width: 270px;
+  }
+
+  .company-name {
+    font-size: 60px;
+    margin: 10px 0;
+  }
+  
+  .tagline {
+    font-size:15px;
+  }
+  
 }
