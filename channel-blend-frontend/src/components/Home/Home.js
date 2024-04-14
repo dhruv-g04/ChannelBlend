@@ -3,6 +3,7 @@ import axios from 'axios';
 import Card from '../Card/Card';
 import Banner from '../Banner/Banner';
 import Barcode from '../Barcode/Barcode';
+import Footer from '../Footer/Footer';
 import './Home.css';
 
 function Home() {
@@ -33,6 +34,9 @@ function Home() {
           ))}
         </div>
       </div>
+      {/* <div> */}
+        <Footer/>
+      {/* </div> */}
     </div>
   );
 }
