@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
 import './IndividualProductPage.css'; 
+import Footer from '../Footer/Footer';
 import { FaStar } from "react-icons/fa6";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 
@@ -52,6 +53,7 @@ const IndividualProductPage = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
