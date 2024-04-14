@@ -9,7 +9,6 @@ const Card = ({ product }) => {
             <h3>{product.product_name}</h3>
             <p>Brand: {product.brand_name}</p>
             <p>Price: ₹{product.price}</p>
-            {/* Update Link to pass product id */}
             <Link to={`/product/${product._id}`} className='details-btn'>View Details</Link>
         </div>
     );

@@ -10,7 +10,7 @@ function Home() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/products') // Proxy for development, update to 'http://localhost:5000/api/products' for production
+    axios.get('http://localhost:5000/api/products') 
       .then(response => {
         setProducts(response.data);
         // console.log("products", response.data);
@@ -34,9 +34,7 @@ function Home() {
           ))}
         </div>
       </div>
-      {/* <div> */}
         <Footer/>
-      {/* </div> */}
     </div>
   );
 }

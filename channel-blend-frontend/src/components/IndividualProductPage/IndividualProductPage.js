@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
-import './IndividualProductPage.css'; // Import CSS file
+import './IndividualProductPage.css'; 
 import { FaStar } from "react-icons/fa6";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 
